@@ -1,0 +1,11 @@
+{
+  "name": "my-js-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npx http-server -p 8080"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
