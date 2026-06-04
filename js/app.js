@@ -1,31 +1,78 @@
-// Basic JavaScript starter
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('App initialized')
-  const cta = document.getElementById('cta')
-  if (cta) {
-    cta.addEventListener('click', () => {
-      showMessage('Hello — this is a demo notification from app.js')
-    })
-  }
-})
+// Sticky Header Effect
 
-function showMessage(message) {
-  if (typeof window === 'undefined') return
-  // Small non-blocking UI: toast
-  const toast = document.createElement('div')
-  toast.textContent = message
-  Object.assign(toast.style, {
-    position: 'fixed',
-    right: '1rem',
-    bottom: '1rem',
-    background: '#111',
-    color: '#fff',
-    padding: '0.6rem 0.8rem',
-    borderRadius: '6px',
-    boxShadow: '0 6px 18px rgba(0,0,0,0.12)'
-  })
-  document.body.appendChild(toast)
-  setTimeout(() => toast.remove(), 3000)
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+    if(window.scrollY > 50){
+        header.style.boxShadow = "0 10px 30px rgba(0,0,0,.08)";
+    } else {
+        header.style.boxShadow = "none";
+    }
+});
+
+// Scroll Animation
+
+const fadeElements = document.querySelectorAll(
+    ".card, .project-card, .about-grid, .price-card, .blog-card"
+);
+
+const observer = new IntersectionObserver(
+(entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},
+{
+    threshold:0.15
 }
+);
 
-export { showMessage }
+fadeElements.forEach(item=>{
+    item.classList.add("fade-up");
+    observer.observe(item);
+});
+
+// Counter Animation
+
+const counters = document.querySelectorAll(".stats-grid h2");
+
+counters.forEach(counter=>{
+
+    const updateCounter = () => {
+
+        const target =
+        parseInt(counter.innerText.replace(/\D/g,''));
+
+        const current =
+        parseInt(counter.getAttribute("data-count")) || 0;
+
+        const increment =
+        Math.ceil(target / 80);
+
+        if(current < target){
+
+            const next = current + increment;
+
+            counter.setAttribute(
+                "data-count",
+                next
+            );
+
+            counter.innerText =
+            next + "+";
+
+            setTimeout(updateCounter,25);
+
+        } else {
+
+            counter.innerText =
+            target + "+";
+        }
+
+    };
+
+    updateCounter();
+
+});
