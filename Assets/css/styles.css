@@ -7,7 +7,7 @@
 :root{
     --primary:#111827;
     --secondary:#f4f4f5;
-    --accent:#2563eb;
+    --accent:#11e8ec;
     --text:#374151;
     --white:#ffffff;
     --border:#e5e7eb;
@@ -101,7 +101,7 @@ ul{
 
 .btn-primary{
     background:var(--accent);
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 .btn-primary:hover{
