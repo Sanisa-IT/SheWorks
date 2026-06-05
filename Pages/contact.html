@@ -6,6 +6,7 @@
 <title>SheWorksSafely</title>
 
 <link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -32,6 +33,27 @@
     </div>
     </header>
 
+    <section class="contact-details">
+        <div class="container contact-details-wrapper">
+            <div class="contact-details-inner">
+                <h1>Contact us</h1>
+                <p>Cell phone: 078 058 2779</p>
+                <p>Email: info@sheworkssafely.org</p>
+                <p>Based in: Johannesburg, Gauteng·South Africa</p><br>
+                <br>
+                <p1>For partnerships, media, speaking invitations, or to share your story, reach out using the details on this page or send a request directly.</p1><br>
+                <br>
+                <a href="../Pages/contact.html" class="btn btn-dark">
+            Request a Service
+        </a>
+            </div>
+            <div class="contact-map-container">
+                <div id="map" class="contact-map"></div>
+            </div>
+        </div>
+    </section>
+
+  
 
 </body>
 
@@ -77,4 +99,15 @@
 
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+    const map = L.map('map').setView([-26.2044, 28.0476], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors',
+        maxZoom: 19,
+    }).addTo(map);
+    L.marker([-26.2044, 28.0476]).addTo(map)
+        .bindPopup('<b>SheWorksSafely</b><br>Johannesburg, South Africa')
+        .openPopup();
+</script>
 <script src="../assets/js/app.js"></script>
