@@ -1011,7 +1011,7 @@ section{
 }
 
 .programs-page .program-content h2 {
-    margin: 0 0 24px;
+    margin: 0 0 8px;
     font-size: 56px;
     line-height: 1.1;
     color: #09111d;
@@ -1021,23 +1021,24 @@ section{
     max-width: 700px;
     color: #65758f;
     font-size: 16px;
-    line-height: 1.9;
-    margin-bottom: 50px;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 36px;
 }
 
 .programs-page .program-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px 100px;
+    gap: 12px 40px;
 }
 
 .programs-page .feature {
     display: flex;
     align-items: flex-start;
-    gap: 14px;
+    gap: 10px;
     color: #111827;
-    font-size: 15px;
-    line-height: 1.7;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .programs-page .feature span {
