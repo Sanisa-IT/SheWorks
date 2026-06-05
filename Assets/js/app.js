@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
 // Scroll Animation
 
 const fadeElements = document.querySelectorAll(
-    ".services-preview, .card, .project-card, .about-grid, .price-card, .blog-card"
+    ".services-preview, .card, .project-card, .about-grid, .price-card, .blog-card, .testimonial-image, .testimonial-text"
 );
 
 const observer = new IntersectionObserver(
@@ -30,7 +30,13 @@ const observer = new IntersectionObserver(
 );
 
 fadeElements.forEach(item=>{
-    item.classList.add("fade-up");
+    if(item.classList.contains('testimonial-image')){
+        item.classList.add('slide-from-right');
+    } else if(item.classList.contains('testimonial-text')){
+        item.classList.add('reveal-text');
+    } else {
+        item.classList.add("fade-up");
+    }
     observer.observe(item);
 });
 

@@ -689,6 +689,29 @@ section{
     transform:translateY(0);
 }
 
+/* Testimonial slide-in */
+.slide-from-right{
+    opacity:0;
+    transform:translateX(100%);
+    transition: .9s cubic-bezier(.22,.9,.35,1);
+}
+
+.slide-from-right.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+.reveal-text{
+    opacity:0;
+    transform:translateX(-20px);
+    transition:.8s .15s;
+}
+
+.reveal-text.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
 /* RESPONSIVE */
 
 @media(max-width:1100px){
