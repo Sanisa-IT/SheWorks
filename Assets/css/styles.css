@@ -5,7 +5,7 @@
 }
 
 :root{
-    --primary:#fdef27;
+    --primary:#080806;
     --secondary:#f4f4f5;
     --accent:rgb(139, 255, 243);
     --text:#374151;
@@ -188,6 +188,17 @@ h2{
     line-height:1.1;
     margin:20px 0;
     font-weight:800;
+}
+
+.programs-hero .hero-title {
+    display:block;
+    max-width:900px;
+    margin:20px 0;
+    font-size:4rem;
+    line-height:1.1;
+    font-weight:800;
+    color:var(--primary);
+    text-align:left;
 }
 
 .hero-content p{
@@ -814,4 +825,238 @@ section{
         width:100%;
     }
 
+}
+/* ===================================
+   PROGRAMS PAGE ONLY
+=================================== */
+
+.programs-page {
+    background: #ffffff;
+}
+
+/* HERO */
+
+.programs-page .programs-hero {
+    background: #eef2f7;
+    padding: 120px 0;
+}
+
+.programs-page .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.programs-page .hero-label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #f4cc00;
+    margin-bottom: 30px;
+}
+
+.programs-page .hero-title {
+    max-width: 760px;
+    font-size: 3.875rem;
+    line-height: 0.95;
+    font-weight: 700;
+    color: #09111d;
+    margin: 0;
+}
+
+/* PROGRAMS */
+
+.programs-page .programs-section {
+    padding: 120px 0;
+}
+
+.programs-page .program-item {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 90px;
+    margin-bottom: 140px;
+}
+
+.programs-page .program-item:last-child {
+    margin-bottom: 0;
+}
+
+.programs-page .program-number-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.programs-page .program-number {
+    font-size: 70px;
+    font-weight: 300;
+    color: #c6cfdb;
+    line-height: 1;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.programs-page .program-number::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    margin-top: 12px;
+    border-radius: 999px;
+}
+
+.programs-page .program-tag {
+    display: block;
+    background: transparent;
+    color: #09111d;
+    padding: 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.programs-page .program-content h2 {
+    margin: 0 0 24px;
+    font-size: 56px;
+    line-height: 1.1;
+    color: #09111d;
+}
+
+.programs-page .program-content p {
+    max-width: 700px;
+    color: #65758f;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 50px;
+}
+
+.programs-page .program-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 100px;
+}
+
+.programs-page .feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    color: #111827;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.programs-page .feature span {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* CTA */
+
+.programs-page .programs-cta {
+    background: #09111d;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.programs-page .programs-cta h2 {
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+.programs-page .programs-cta p {
+    max-width: 620px;
+    margin: 0 auto 40px;
+    color: rgba(255,255,255,.75);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.programs-page .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4cc00;
+    border: 2px solid #f4cc00;
+    color: #000;
+    text-decoration: none;
+    padding: 16px 34px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: all .3s ease;
+}
+
+.programs-page .cta-btn:hover {
+    transform: translateY(-3px);
+    background: #e6b901;
+}
+
+/* ANIMATION */
+
+.programs-page .program-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition: none;
+}
+
+.programs-page .program-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+
+    .programs-page .hero-title {
+        font-size: 60px;
+    }
+
+    .programs-page .program-item {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .programs-page .program-content h2 {
+        font-size: 42px;
+    }
+
+    .programs-page .program-features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .programs-page .container {
+        padding: 0 24px;
+    }
+
+    .programs-page .hero-title {
+        font-size: 42px;
+    }
+
+    .programs-page .program-number {
+        font-size: 56px;
+    }
+
+    .programs-page .program-content h2 {
+        font-size: 34px;
+    }
+
+    .programs-page .program-content p {
+        font-size: 16px;
+    }
+
+    .programs-page .programs-cta h2 {
+        font-size: 38px;
+    }
 }
