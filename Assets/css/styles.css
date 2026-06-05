@@ -7,7 +7,7 @@
 :root{
     --primary:#fdef27;
     --secondary:#f4f4f5;
-    --accent:#11e8ec;
+    --accent:rgb(139, 255, 243);
     --text:#374151;
     --white:#ffffff;
     --border:#e5e7eb;
@@ -105,7 +105,7 @@ h2{
 
 .btn-primary{
     background:var(--accent);
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
 }
 
 .btn-primary:hover{
@@ -132,8 +132,14 @@ h2{
 }
 
 .btn-light{
-    background:white;
+    background:rgb(139, 255, 243);
     color:black;
+}
+
+.btn-light:hover{
+    transform:translateY(-4px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+    transition:var(--transition);
 }
 
 /* HERO */
@@ -490,6 +496,30 @@ section{
 
 .footer a:hover{
     opacity:1;
+}
+
+.footer-social{
+    margin-top:16px;
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
+
+.footer-social .social-link{
+    display:inline-flex;
+    width:22px;
+    height:22px;
+    color:var(--white);
+    background:transparent;
+    align-items:center;
+    justify-content:center;
+}
+
+.footer-social .social-link svg{
+    width:20px;
+    height:20px;
+    fill:var(--white);
+    display:block;
 }
 
 /* INNER PAGES */
