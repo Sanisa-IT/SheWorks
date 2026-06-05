@@ -41,6 +41,10 @@ ul{
     list-style:none;
 }
 
+h2{
+    font-style:italic;
+}
+
 .container{
     width:90%;
     max-width:var(--container);
@@ -292,7 +296,7 @@ section{
     margin:20px 0;
     color:var(--primary);
     line-height:1.05;
-    grid: spacing -0.13em;
+    word-spacing:-0.13em;
 }
 
 /* PROJECTS */
@@ -430,6 +434,95 @@ section{
 .page-hero p{
     max-width:700px;
     margin:20px auto;
+}
+
+.about-hero{
+    padding-top:180px;
+    padding-bottom:100px;
+    background:#f8fafc;
+    color:var(--primary);
+}
+
+.about-hero .about-hero-label{
+    font-size:1rem;
+    font-weight:600;
+    color:var(--accent);
+    text-align:left;
+    margin-bottom:30px;
+}
+
+.about-hero > .container > h1{
+    max-width:900px;
+    margin:0 auto;
+    text-align:center;
+    font-size:4rem;
+    line-height:1.1;
+    color:var(--primary);
+}
+
+.about-hero-grid{
+    display:grid;
+    grid-template-columns:420px minmax(0,1fr);
+    gap:50px;
+    align-items:start;
+    margin-top:60px;
+}
+
+.about-hero-image{
+    position:sticky;
+    top:100px;
+}
+
+.about-hero-image img{
+    width:100%;
+    border-radius:30px;
+    display:block;
+    object-fit:cover;
+}
+
+.image-caption{
+    margin-top:20px;
+    text-align:center;
+}
+
+.caption-name{
+    font-size:1.15rem;
+    font-weight:600;
+    color:var(--primary);
+    margin-bottom:4px;
+}
+
+.caption-role{
+    font-size:0.95rem;
+    color:var(--text);
+    font-weight:500;
+}
+
+.about-hero-text h1{
+    font-size:1.35rem;
+    line-height:1.85;
+    font-weight:500;
+    margin-bottom:36px;
+    max-width:760px;
+    color:var(--primary);
+}
+
+.about-hero-text h1:last-child{
+    margin-bottom:0;
+}
+
+.about-hero-text h3{
+    font-size:1.35rem;
+    line-height:1.85;
+    font-weight:600;
+    margin-bottom:36px;
+    max-width:760px;
+    color:var(--primary);
+}
+
+.about-hero-text h1 strong,
+.about-hero-text h3 strong{
+    font-weight:700;
 }
 
 /* CONTACT */
