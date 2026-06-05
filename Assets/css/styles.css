@@ -139,8 +139,9 @@ ul{
     min-height:100vh;
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-start;
     overflow:hidden;
+    padding-left:10%;
 }
 
 .hero video{
@@ -159,7 +160,7 @@ ul{
 .hero-content{
     position:relative;
     z-index:5;
-    text-align:center;
+    text-align:left;
     max-width:900px;
     color:white;
     padding:20px;
@@ -175,13 +176,13 @@ ul{
 .hero-content p{
     font-size:1.15rem;
     max-width:700px;
-    margin:auto;
+    margin:0;
 }
 
 .hero-buttons{
     margin-top:40px;
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
     gap:15px;
     flex-wrap:wrap;
 }
