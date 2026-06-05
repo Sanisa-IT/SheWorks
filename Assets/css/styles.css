@@ -291,6 +291,8 @@ section{
     font-size:3rem;
     margin:20px 0;
     color:var(--primary);
+    line-height:1.05;
+    word: spacing -0.13em;em;
 }
 
 /* PROJECTS */
