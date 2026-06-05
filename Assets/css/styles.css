@@ -1153,19 +1153,6 @@ section{
     background: #e6b901;
 }
 
-/* ANIMATION */
-
-.programs-page .program-item {
-    opacity: 1;
-    transform: translateY(0);
-    transition: none;
-}
-
-.programs-page .program-item.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* TABLET */
 
 @media (max-width: 992px) {
