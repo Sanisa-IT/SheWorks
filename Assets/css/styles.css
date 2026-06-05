@@ -332,14 +332,20 @@ section{
 /* TESTIMONIAL */
 
 .testimonial{
-    text-align:center;
+    text-align:right;
     background:var(--primary);
     color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-end;
+    padding-right:10%;
+    padding-top:120px;
+    padding-bottom:120px;
 }
 
 .testimonial h2{
     max-width:900px;
-    margin:auto;
     font-size:2.5rem;
     line-height:1.4;
 }
@@ -357,8 +363,15 @@ section{
     #2563eb,
     #4f46e5
     );
-    text-align:center;
+    text-align:left;
     color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding-left:10%;
+    padding-top:120px;
+    padding-bottom:120px;
 }
 
 .cta h2{
