@@ -515,7 +515,11 @@ section{
     padding-top:180px;
     padding-bottom:100px;
     background:#f8fafc;
-    color:var(--primary);
+    color:#000;
+}
+
+.about-hero, .about-hero *{
+    color: #000 !important;
 }
 
 .about-hero .about-hero-label{
