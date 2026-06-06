@@ -293,12 +293,101 @@ a[href$="request-service.html"]:hover {
     margin:0;
 }
 
+.professionals-hero{
+    position:relative;
+    padding:140px 0 100px;
+    background: radial-gradient(circle at top left, rgba(139,255,243,.18), transparent 28%),
+                radial-gradient(circle at 90% 20%, rgba(230,185,1,.14), transparent 24%),
+                linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    overflow:hidden;
+}
+
+.professionals-hero .hero-bg{
+    position:absolute;
+    inset:0;
+    background: linear-gradient(140deg, rgba(255,255,255,.7), rgba(255,255,255,0) 60%),
+                radial-gradient(circle at 30% 20%, rgba(139,255,243,.25), transparent 18%),
+                radial-gradient(circle at 75% 15%, rgba(230,185,1,.24), transparent 16%);
+    pointer-events:none;
+}
+
+.professionals-hero .hero-content{
+    position:relative;
+    z-index:2;
+    text-align:left;
+    color: #0f172a;
+    padding: 40px 20px;
+    max-width:780px;
+    opacity:0;
+    transform:translateY(24px);
+    animation: fadeInUp .8s ease-out .2s forwards;
+}
+
+.professionals-hero .section-tag{
+    display:inline-block;
+    font-size:0.9rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color: #e6b901;
+    margin-bottom:16px;
+}
+
+.professionals-hero .hero-content h1{
+    font-size:3.8rem;
+    line-height:1.05;
+    margin:18px 0 22px;
+    color:#0f172a;
+}
+
+.professionals-hero .hero-content p{
+    font-size:1.12rem;
+    line-height:1.75;
+    color:#4b5868;
+}
+
 .hero-buttons{
     margin-top:40px;
     display:flex;
     justify-content:flex-start;
     gap:15px;
     flex-wrap:wrap;
+}
+
+/* Fade-in animation for professionals hero */
+.professionals-hero .hero-content > *{
+    opacity:0;
+    transform:translateY(12px);
+}
+
+.professionals-hero .section-tag{
+    animation:fadeUp .65s ease forwards;
+    animation-delay:0s;
+}
+
+.professionals-hero .hero-content h1{
+    animation:fadeUp .75s cubic-bezier(.2,.9,.2,1) forwards;
+    animation-delay:.15s;
+}
+
+.professionals-hero .hero-content p{
+    animation:fadeUp .85s cubic-bezier(.2,.9,.2,1) forwards;
+    animation-delay:.32s;
+}
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(12px);} 
+    to{opacity:1; transform:translateY(0);} 
+}
+
+@media (prefers-reduced-motion: reduce){
+    .professionals-hero .hero-content > *,
+    .professionals-hero .section-tag,
+    .professionals-hero .hero-content h1,
+    .professionals-hero .hero-content p{
+        animation: none !important;
+        opacity:1 !important;
+        transform:none !important;
+    }
 }
 
 .tag{
@@ -339,6 +428,28 @@ section{
     padding:120px 0;
 }
 
+.professionals-grid{
+    position:relative;
+    overflow:hidden;
+    background:radial-gradient(circle at top left, rgba(139,255,243,.14), transparent 35%),
+                radial-gradient(circle at bottom right, rgba(230,185,1,.12), transparent 30%),
+                #ffffff;
+}
+
+.professionals-deco{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background-image:radial-gradient(circle at 20% 20%, rgba(139,255,243,.16) 0%, transparent 25%),
+                      radial-gradient(circle at 80% 10%, rgba(230,185,1,.12) 0%, transparent 22%),
+                      radial-gradient(circle at 50% 90%, rgba(15,23,42,.05) 0%, transparent 20%);
+    opacity:.9;
+}
+
+.professionals-grid .section-heading{
+    margin-bottom:60px;
+}
+
 .section-heading{
     text-align:center;
     margin-bottom:70px;
@@ -369,6 +480,117 @@ section{
     padding:40px;
     border-radius:var(--radius);
     transition:var(--transition);
+}
+
+.professionals-grid .container{
+    position:relative;
+    z-index:1;
+}
+
+.professional-card{
+    display:grid;
+    gap:24px;
+    padding:32px;
+    background:#ffffff;
+    border-radius:28px;
+    border:1px solid rgba(15,23,42,.06);
+    box-shadow:0 18px 45px rgba(15,23,42,.06);
+    transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.professional-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 28px 70px rgba(15,23,42,.12);
+    border-color:rgba(139,255,243,.5);
+}
+
+.professional-image{
+    border-radius:24px;
+    overflow:hidden;
+    position:relative;
+}
+
+.professional-image::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(15,23,42,.15) 80%);
+    transition:opacity .35s ease;
+}
+
+.professional-card:hover .professional-image::after{
+    opacity:0;
+}
+
+.professional-image img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .55s ease;
+}
+
+.professional-card:hover .professional-image img{
+    transform:scale(1.08);
+}
+
+.professional-content{
+    display:grid;
+    gap:12px;
+}
+
+.profession-category{
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:999px;
+    background:rgba(139,255,243,.16);
+    color:rgb(15,23,42);
+    font-weight:700;
+    font-size:.95rem;
+    letter-spacing:.02em;
+}
+
+.professional-content h3{
+    font-size:1.9rem;
+    margin:0;
+    color:#0f172a;
+}
+
+.professional-content h4{
+    margin:0;
+    font-size:1rem;
+    color:rgba(15,23,42,.75);
+}
+
+.professional-content p{
+    margin:0;
+    color:var(--text);
+    line-height:1.8;
+}
+
+@media (min-width: 900px) {
+    .professionals-grid .container{
+        padding-top:20px;
+    }
+
+    .professional-card{
+        grid-template-columns:360px 1fr;
+        align-items:center;
+    }
+
+    .professional-image{
+        min-height:360px;
+    }
+}
+
+@media (max-width: 900px) {
+    .professionals-grid{
+        padding:80px 0;
+    }
+
+    .professional-card{
+        padding:26px;
+    }
 }
 
 .card:hover{
@@ -710,6 +932,15 @@ section{
 
 .about-hero, .about-hero *{
     color: #000 !important;
+}
+
+.about-hero .about-top-link{
+    margin-bottom:20px;
+}
+
+.about-hero .about-top-link .btn{
+    font-size:0.95rem;
+    padding:12px 24px;
 }
 
 .about-hero .about-hero-label{
@@ -1392,6 +1623,18 @@ section{
     line-height:1.6;
 }
 
+/* SECTION TAG */
+
+.section-tag{
+    display:inline-block;
+    color:var(--accent);
+    font-weight:700;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    margin-bottom:18px;
+    font-size:.95rem;
+}
+
 /* SURVEY INTRO */
 
 .survey-intro{
@@ -1405,9 +1648,10 @@ section{
     margin:0 auto;
 }
 
-.intro-content .section-tag{
-    color:var(--accent);
-    font-weight:600;
+.intro-content-wide{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 10px;
 }
 
 .intro-content h2{
