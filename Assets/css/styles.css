@@ -7,7 +7,7 @@
 :root{
     --primary:#080806;
     --secondary:#f4f4f5;
-    --accent:rgb(139, 255, 243);
+    --accent:rgb(230, 185, 1);
     --text:#374151;
     --white:#ffffff;
     --border:#e5e7eb;
@@ -218,7 +218,7 @@ a[href$="request-service.html"]:hover {
 }
 
 .btn-light{
-    background:rgb(139, 255, 243);
+    background:#e6b901;
     color:black;
 }
 
@@ -328,7 +328,7 @@ a[href$="request-service.html"]:hover {
     font-size:0.9rem;
     letter-spacing:0.14em;
     text-transform:uppercase;
-    color: #e6b901;
+    color: #a88700;
     margin-bottom:16px;
 }
 
