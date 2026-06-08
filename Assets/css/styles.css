@@ -1498,10 +1498,23 @@ footer.footer{
 
 /* SURVEY PAGE STYLES */
 
+.programs-hero{
+    padding:80px 0 50px;
+}
+
+.impact-section,
+.stats-section,
+.survey-intro,
+.testimonials,
+.survey-form-section,
+.big-cta{
+    padding:70px 0;
+}
+
 .impact-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:70px;
+    gap:60px;
     align-items:center;
 }
 
@@ -1522,6 +1535,8 @@ footer.footer{
     margin:20px 0;
     color:#0f172a;
     line-height:1.05;
+    text-align:center;
+    text-indent:-0.02em;
 }
 
 .impact-content p{
@@ -1529,6 +1544,8 @@ footer.footer{
     font-size:1rem;
     line-height:1.6;
     margin:20px 0;
+    text-align:center;
+    text-indent:-0.02em;
 }
 
 .impact-content ul{
@@ -1546,7 +1563,7 @@ footer.footer{
 /* STATS SECTION */
 
 .stats-section{
-    padding:120px 0;
+    padding:70px 0;
     background:#f8fafc;
 }
 
@@ -1649,7 +1666,7 @@ footer.footer{
 /* SURVEY INTRO */
 
 .survey-intro{
-    padding:120px 0;
+    padding:70px 0;
     background:#ffffff;
 }
 
@@ -1733,7 +1750,7 @@ footer.footer{
 /* TESTIMONIALS */
 
 .testimonials{
-    padding:120px 0;
+    padding:70px 0;
     background:#ffffff;
 }
 
@@ -1815,7 +1832,7 @@ footer.footer{
 /* SURVEY FORM */
 
 .survey-form-section{
-    padding:120px 0;
+    padding:70px 0;
     background:#ffffff;
 }
 
@@ -1929,7 +1946,7 @@ footer.footer{
 /* BIG CTA */
 
 .big-cta{
-    padding:120px 0;
+    padding:70px 0;
     background:#09111d;
     color:white;
 }
