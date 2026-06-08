@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
 // Scroll Animation
 
 const fadeElements = document.querySelectorAll(
-    ".services-preview, .programs-hero, .program-item, .card, .project-card, .about-grid, .price-card, .blog-card, .testimonial-image, .testimonial-text, .stat-card, .impact-section, .survey-intro"
+    ".fade-up, .slide-from-right, .reveal-text, .testimonial-image, .testimonial-text"
 );
 
 const observer = new IntersectionObserver(

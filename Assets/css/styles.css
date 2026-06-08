@@ -320,7 +320,7 @@ a[href$="request-service.html"]:hover {
     max-width:780px;
     opacity:0;
     transform:translateY(24px);
-    animation: fadeInUp .8s ease-out .2s forwards;
+    animation: fadeUp .8s ease-out .2s forwards;
 }
 
 .professionals-hero .section-tag{
