@@ -7,7 +7,7 @@
 :root{
     --primary:#080806;
     --secondary:#f4f4f5;
-    --accent:rgb(230, 185, 1);
+    --accent:rgb(170, 137, 4);
     --text:#374151;
     --white:#ffffff;
     --border:#e5e7eb;
@@ -169,14 +169,14 @@ h2{
 
 a[href$="request-service.html"].btn,
 a[href$="request-service.html"] {
-    background: #f4cc00;
+    background: #b69202;
     color: #000;
-    border-color: #f4cc00;
+    border-color: #b69202;
 }
 
 a[href$="request-service.html"].btn:hover,
 a[href$="request-service.html"]:hover {
-    background: #e6b901;
+    background: #b69202;
 }
 
 .btn-primary{
@@ -189,7 +189,7 @@ a[href$="request-service.html"]:hover {
 }
 
 .btn-dark{
-    background:#e6b901;
+    background:#b69202;
     color:rgb(17, 17, 17);
 }
 
@@ -198,13 +198,13 @@ a[href$="request-service.html"]:hover {
 }
 
 a[href$="request-service.html"] {
-    background: #f4cc00 !important;
+    background: #b69202 !important;
     color: #000 !important;
-    border-color: #f4cc00 !important;
+    border-color: #b69202 !important;
 }
 
 a[href$="request-service.html"]:hover {
-    background: #e6b901 !important;
+    background: #b69202 !important;
 }
 
 .btn-outline{
@@ -328,7 +328,7 @@ a[href$="request-service.html"]:hover {
     font-size:0.9rem;
     letter-spacing:0.14em;
     text-transform:uppercase;
-    color: #a88700;
+    color: #b69202;
     margin-bottom:16px;
 }
 
@@ -682,7 +682,7 @@ footer.footer{
 /* TESTIMONIAL */
 
 .testimonial{
-    background:#fceb00;
+    background:#e6b901;
     color:white;
     display:flex;
     justify-content:center;
@@ -1420,7 +1420,7 @@ footer.footer{
     font-size: 10px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: #f4cc00;
+    color: #012b47;
     margin-bottom: 30px;
 }
 
@@ -1532,7 +1532,7 @@ footer.footer{
 }
 
 .impact-tag{
-    color:#f4cc00;
+    color:#796502;
     font-weight:600;
     font-size:0.85rem;
     letter-spacing:1px;
@@ -1746,7 +1746,7 @@ footer.footer{
     transform:translateX(-50%);
     width:58%;
     height:10px;
-    background:linear-gradient(90deg,#f4cc00,#f0b300);
+    background:linear-gradient(90deg,#b69202,#b69202);
     border-radius:6px;
 }
 
@@ -1936,7 +1936,7 @@ footer.footer{
     align-items:center;
     justify-content:center;
     padding:16px 40px;
-    background:#f4cc00;
+    background:#e6b901;
     color:#000;
     border:none;
     border-radius:999px;
@@ -2133,8 +2133,8 @@ footer.footer{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #f4cc00;
-    border: 2px solid #f4cc00;
+    background: #e6b901;
+    border: 2px solid #e6b901;
     color: #000;
     text-decoration: none;
     padding: 16px 34px;
