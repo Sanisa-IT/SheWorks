@@ -425,7 +425,15 @@ a[href$="request-service.html"]:hover {
 /* SECTIONS */
 
 section{
-    padding:120px 0;
+    padding:80px 0;
+}
+
+.services-preview,
+.about-home,
+.projects,
+.testimonial,
+.cta{
+    padding:60px 0;
 }
 
 .network-intro,
@@ -679,8 +687,8 @@ footer.footer{
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:80px 10%;
-    min-height:400px;
+    padding:60px 10%;
+    min-height:auto;
 }
 
 .testimonial-inner{
@@ -690,7 +698,7 @@ footer.footer{
     width:100%;
     max-width:1200px;
     
-    padding:50px;
+    padding:30px;
     border-radius:30px;
     color:#0f172a;
 }
