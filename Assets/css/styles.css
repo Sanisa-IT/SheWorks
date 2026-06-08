@@ -295,7 +295,7 @@ a[href$="request-service.html"]:hover {
 
 .professionals-hero{
     position:relative;
-    padding:140px 0 100px;
+    padding:100px 0 70px;
     background: radial-gradient(circle at top left, rgba(139,255,243,.18), transparent 28%),
                 radial-gradient(circle at 90% 20%, rgba(230,185,1,.14), transparent 24%),
                 linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
@@ -428,6 +428,17 @@ section{
     padding:120px 0;
 }
 
+.network-intro,
+.professionals-grid,
+.impact-banner,
+.cta-section{
+    padding:70px 0;
+}
+
+footer.footer{
+    padding:60px 0;
+}
+
 .professionals-grid{
     position:relative;
     overflow:hidden;
@@ -447,12 +458,12 @@ section{
 }
 
 .professionals-grid .section-heading{
-    margin-bottom:60px;
+    margin-bottom:40px;
 }
 
 .section-heading{
     text-align:center;
-    margin-bottom:70px;
+    margin-bottom:50px;
 }
 
 .section-heading span{
