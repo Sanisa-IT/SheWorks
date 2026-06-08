@@ -189,7 +189,7 @@ a[href$="request-service.html"]:hover {
 }
 
 .btn-dark{
-    background:#b69202;
+    background:hsla(49, 100%, 51%, 0.938);
     color:rgb(17, 17, 17);
 }
 
@@ -328,7 +328,7 @@ a[href$="request-service.html"]:hover {
     font-size:0.9rem;
     letter-spacing:0.14em;
     text-transform:uppercase;
-    color: #b69202;
+    color: #e6b901;
     margin-bottom:16px;
 }
 
